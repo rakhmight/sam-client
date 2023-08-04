@@ -1,0 +1,165 @@
+ .messenger{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px 250px 670px 280px;
+  position: relative;
+}
+
+
+/* CHATS Component  ===========================*/
+.messenger__chats-window{
+    max-height: 567px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* --- CORRESPONDENCE Component  ===========================*/
+.messenger__correspondence-box{
+    cursor: pointer;
+}
+.lim-txt-150{
+    width: 150px;
+}
+.lim-txt-110{
+    width: 110px;
+}
+
+
+/* CHAT Component  ===========================*/
+.chat{
+    display: grid;
+    grid-template-rows: 48px auto minmax(44px, min-content);
+    max-height: 670px;
+}
+
+.chat__titlebar, .chat__tools{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+}
+
+.chat__titlebar{
+    align-items: center;
+}
+.chat__tools{
+    overflow: hidden;
+    align-items: end;
+}
+
+.chat__window{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.chat__textarea>::-webkit-scrollbar{
+    width: 4px;
+}
+.chat__textarea{
+    flex: 1 1 auto;
+    margin: 5px 0;
+}
+
+
+/* --- CHAT TOOLS Component  =========================== */
+.emoji{
+    position: relative;
+}
+.emoji__picker{
+    position: fixed;
+    bottom: 40px;
+    right: 200px;
+    z-index: 100;
+}
+
+
+/* --- CHAT WINDOW Component  ===========================*/
+.msg-out-group, .msg-inc-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.msg-out-group{
+    align-items: end;
+}
+.msg-inc-group{
+    align-items: start;
+}
+
+.msgs-date{
+    margin: 12px 0 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.m-date{
+    padding: 4px 10px;
+    background-color: #0b2638;
+    border-radius: 10px;
+}
+
+.msg-out, .msg-inc{
+    padding: 8px 10px;
+    max-width: 80%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.msg-out{
+    background-color: aliceblue;
+    border-radius: 10px 10px 0 10px;
+}
+.msg-inc{
+    background-color: rgb(227, 235, 241);
+    border-radius: 10px 10px 10px 0;
+}
+
+
+/* INFO PANEL Component  ===========================*/
+.lim-txt-160{
+    width: 160px;
+}
+
+
+/* CONTACTS Component  ===========================*/
+.contacts__list{
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.contact__action{
+    opacity: 0;
+}
+.contact:hover .contact__action{
+    opacity: 1;
+}
+
+
+/* NAVIGATION Component  =========================== */
+.navigation{
+    position: absolute;
+    z-index: 2;
+    transition: width 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav-full{
+    width: 200px;
+}
+.nav-min{
+    width: 40px;
+}

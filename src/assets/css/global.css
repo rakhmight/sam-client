@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --red-color: #d53b12;
+  --main-color: #154a6d;
+  /* 0b2638 */
+  font-family:'Times New Roman', Times, serif;
+}
+
+.root{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30px auto;
+}
+
+.titlebar{
+  width: 100%;
+  background-color: #0b2638;
+  user-select: none;
+  position: relative;
+  z-index: 9999;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* ширина для вертикального скролла */
+  background-color: #b9b9b9;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #0b2638be;
+  border-radius: 1em;
+}
+
+.lim-txt{
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
