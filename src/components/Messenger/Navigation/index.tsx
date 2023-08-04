@@ -24,7 +24,7 @@ export default function Navigation(){
     }
 
     return (
-       <div className={!navMode ? 'nav-min navigation h-full bg-blue-600 dark:bg-sky-950 py-2.5' : 'nav-full navigation h-full bg-blue-600 dark:bg-sky-950 py-2.5'}>
+       <div className={!navMode ? 'nav-min navigation h-full py-2.5' : 'nav-full navigation h-full py-2.5'}>
             <div className='h-full w-full px-1'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-2'>

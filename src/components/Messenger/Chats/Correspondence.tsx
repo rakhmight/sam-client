@@ -1,8 +1,8 @@
 import { Avatar, AvatarBadge } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
-// import { Badge } from '@chakra-ui/react'
-import { Icon } from '@chakra-ui/react'
-import { BsCheck2 } from 'react-icons/bs'
+import { Badge } from '@chakra-ui/react'
+// import { Icon } from '@chakra-ui/react'
+// import { BsCheck2 } from 'react-icons/bs'
 // import { BsCheck2All } from 'react-icons/bs'
 
 export default function(){
@@ -13,7 +13,7 @@ return (
             <div className='flex w-full flex-row gap-1.5 items-center'>
                 <div>
                     <Avatar size='md' name='Rakhimov Diyor'>
-                        <AvatarBadge boxSize='0.8em' bg='blue.800' />
+                        <AvatarBadge boxSize='0.8em' bg='var(--special-color)' />
                     </Avatar>
                 </div>
 
@@ -23,13 +23,17 @@ return (
                         <Text fontSize='smaller' color='grey' align='end'>29.12.2020</Text>
                     </div>
 
-                    <div className='flex flex-row align-start justify-between'>
+                    <div className='flex flex-row align-start justify-between items-center'>
                         <div>
-                            <Text fontSize='sm' color='grey' className='lim-txt lim-txt-150'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Text>
+                            {/* <Text fontSize='sm' color='grey' className='lim-txt lim-txt-150'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Text> */}
+                            <div className='flex gap-1'>
+                                <Badge colorScheme='facebook'>jpeg</Badge>
+                                <Text fontSize='sm' color='grey' className='lim-txt lim-txt-120' as='i'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo error expedita placeat, soluta adipisci aut repellendus dignissimos odit? Blanditiis eaque debitis aperiam tempore ab inventore quae qui asperiores maiores doloremque.</Text>
+                            </div>
                         </div>
                         <div>
-                            {/* <Badge colorScheme='facebook'>122М</Badge> */}
-                            <Icon as={BsCheck2} fontSize='lg' color='blue.800' />
+                            {/* <Badge colorScheme='facebook'>1</Badge> */}
+                            {/* <Icon as={BsCheck2} fontSize='lg' color='var(--special-color)' /> */}
                             {/* <Icon as={BsCheck2All} fontSize='lg' color='blue.800' /> */}
                         </div>
                     </div>

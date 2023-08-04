@@ -1,5 +1,6 @@
 import { BiDotsVerticalRounded } from 'react-icons/bi'
 import { BsFillTelephoneFill, BsCameraVideoFill } from 'react-icons/bs'
+import { BiFolderPlus } from 'react-icons/bi'
 import {
    Menu,
    MenuButton,
@@ -35,7 +36,7 @@ export default function(){
             />
             <MenuList p={0} minW="0" w={'150px'} fontSize={'14px'}>
                <MenuItem
-               icon={<BsFillTelephoneFill color='var(--main-color)' />}
+               icon={<BsFillTelephoneFill color='var(--special-color)' />}
                onClick={() =>{
                   if (!toast.isActive(id)){
                      toast({
@@ -50,10 +51,10 @@ export default function(){
                   }
                }}
                >
-                  Call
+                  <Text fontSize='14px'>Call</Text>
                </MenuItem>
                <MenuItem
-               icon={<BsCameraVideoFill color='var(--main-color)' />}
+               icon={<BsCameraVideoFill color='var(--special-color)' />}
                onClick={() =>{
                   if (!toast.isActive(id)){
                      toast({
@@ -68,7 +69,26 @@ export default function(){
                   }
                }}
                >
-                  Video call
+                  <Text fontSize='14px'>Video call</Text>
+               </MenuItem>
+               <MenuItem
+               fontSize='18px'
+               icon={<BiFolderPlus color='var(--special-color)' />}
+               onClick={() =>{
+                  if (!toast.isActive(id)){
+                     toast({
+                     description: `Will come in the next update`,
+                     status: 'info',
+                     isClosable: true,
+                     variant: 'left-accent',
+                     position: 'bottom-right',
+                     colorScheme: 'facebook',
+                     id
+                     })
+                  }
+               }}
+               >
+                  <Text fontSize='14px'>Add to favorite</Text>
                </MenuItem>
             </MenuList>
             </Menu>

@@ -82,7 +82,7 @@ export default function(){
                     />
                 </div>
                 <div className='mb-3'>
-                    <Icon as={IoSendSharp} color='#082f49' size='md' w={6} h={6} className="hover:cursor-pointer" />
+                    <Icon as={IoSendSharp} color='var(--special-color)' size='md' w={6} h={6} className="hover:cursor-pointer" />
                 </div>
             </div>
         </div>

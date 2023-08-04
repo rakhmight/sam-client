@@ -35,11 +35,11 @@ export default function Info(){
                   </div>
             </div>
             
-            <Divider orientation='horizontal' borderTop='8px solid' color='#e2e8f0'/>
+            <Divider orientation='horizontal' borderTop='8px solid' color='#c4d0dfcf'/>
             
             <div className="bio w-full px-4 flex flex-row gap-5">
                <div>
-                  <Icon as={LiaInfoCircleSolid} fontSize='24px' color='var(--main-color)' />
+                  <Icon as={LiaInfoCircleSolid} fontSize='24px' color='var(--special-color)' />
                </div>
 
                <div className='flex flex-col gap-3'>
@@ -58,16 +58,17 @@ export default function Info(){
                </div>
             </div>
             
-            <Divider orientation='horizontal' borderTop='8px solid' color='#e2e8f0'/>
+            <Divider orientation='horizontal' borderTop='8px solid' color='#c4d0dfcf'/>
             
             <div className="actions px-4 w-full flex flex-row gap-5 items-center">
                <div>
-                  <Icon as={BsLightningCharge} fontSize='20px' color='var(--main-color)' />
+                  <Icon as={BsLightningCharge} fontSize='20px' color='var(--special-color)' />
                </div>
 
                <div className='flex gap-2.5'>
                   <div>
                      <IconButton
+                     size='sm'
                      variant='outline'
                      colorScheme='facebook'
                      aria-label='Call Sage'
@@ -90,6 +91,7 @@ export default function Info(){
                   </div>
                   <div>
                      <IconButton
+                     size='sm'
                      variant='outline'
                      colorScheme='facebook'
                      aria-label='Call Sage'
@@ -112,6 +114,7 @@ export default function Info(){
                   </div>
                   <div>
                      <IconButton
+                     size='sm'
                      variant='outline'
                      colorScheme='facebook'
                      aria-label='Call Sage'
@@ -135,23 +138,23 @@ export default function Info(){
                </div>
             </div>
             
-            <Divider orientation='horizontal' borderTop='8px solid' color='#e2e8f0'/>
+            <Divider orientation='horizontal' borderTop='8px solid' color='#c4d0dfcf'/>
 
             <div className="media w-full">
                <div className='w-full flex flex-row gap-5 items-center px-4 py-1.5 hover:bg-slate-200 hover:cursor-pointer'>
-                  <div><Icon as={ImFileEmpty} fontSize='18px' color='var(--main-color)' /></div>
+                  <div><Icon as={ImFileEmpty} fontSize='18px' color='var(--special-color)' /></div>
                   <div><Text fontSize='sm'>0 files</Text></div>
                </div>
                <div className='w-full flex flex-row gap-5 items-center px-4 py-1.5 hover:bg-slate-200 hover:cursor-pointer'>
-                  <div><Icon as={ImFilePicture} fontSize='18px' color='var(--main-color)' /></div>
+                  <div><Icon as={ImFilePicture} fontSize='18px' color='var(--special-color)' /></div>
                   <div><Text fontSize='sm'>0 images</Text></div>
                </div>
                <div className='w-full flex flex-row gap-5 items-center px-4 py-1.5 hover:bg-slate-200 hover:cursor-pointer'>
-                  <div><Icon as={ImFilePlay} fontSize='18px' color='var(--main-color)' /></div>
+                  <div><Icon as={ImFilePlay} fontSize='18px' color='var(--special-color)' /></div>
                   <div><Text fontSize='sm'>0 videos</Text></div>
                </div>
                <div className='w-full flex flex-row gap-5 items-center px-4 py-1.5 hover:bg-slate-200 hover:cursor-pointer'>
-                  <div><Icon as={ImFileMusic} fontSize='18px' color='var(--main-color)' /></div>
+                  <div><Icon as={ImFileMusic} fontSize='18px' color='var(--special-color)' /></div>
                   <div><Text fontSize='sm'>0 audio files</Text></div>
                </div>
             </div>

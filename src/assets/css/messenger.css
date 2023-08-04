@@ -24,6 +24,9 @@
 .lim-txt-110{
     width: 110px;
 }
+.lim-txt-120{
+    width: 120px;
+}
 
 
 /* CHAT Component  ===========================*/
@@ -116,13 +119,25 @@
     gap: 6px;
 }
 
-.msg-out{
+.msg-out, .msg-file-out{
     background-color: aliceblue;
     border-radius: 10px 10px 0 10px;
 }
-.msg-inc{
+.msg-inc, .msg-file-inc{
     background-color: rgb(227, 235, 241);
     border-radius: 10px 10px 10px 0;
+}
+
+.msg-file-out, .msg-file-inc{
+    padding: 8px 10px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.lim-txt-400{
+    max-width: 400px;
 }
 
 
@@ -155,6 +170,8 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    background-color: var(--main-color);
+    border-top: 1px solid rgba(196, 196, 196, 0.199);
 }
 
 .nav-full{
