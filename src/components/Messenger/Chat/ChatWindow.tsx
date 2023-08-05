@@ -48,7 +48,7 @@ export default function(){
                             <Text color='grey' fontSize='small'>12:40</Text>
                         </div>
                         <div>
-                            <Icon as={BsCheck2} fontSize='lg' color='blue.800' /> 
+                            <Icon as={BsCheck2All} fontSize='lg' color='blue.800' /> 
                         </div>
                     </div>
 
@@ -78,7 +78,7 @@ export default function(){
                                         <Text color='grey' fontSize='small'>12:40</Text>
                                     </div>
                                     <div>
-                                        <Icon as={BsCheck2} fontSize='lg' color='blue.800' className='mb-0.5' /> 
+                                        <Icon as={BsCheck2All} fontSize='lg' color='blue.800' className='mb-0.5' /> 
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ export default function(){
                                         <Text color='grey' fontSize='small'>12:40</Text>
                                     </div>
                                     <div>
-                                        <Icon as={BsCheck2} fontSize='lg' color='blue.800' className='mb-0.5' /> 
+                                        <Icon as={BsCheck2All} fontSize='lg' color='blue.800' className='mb-0.5' /> 
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@ export default function(){
                                         <Text color='grey' fontSize='small'>12:40</Text>
                                     </div>
                                     <div>
-                                        <Icon as={BsCheck2} fontSize='lg' color='blue.800' className='mb-0.5' /> 
+                                        <Icon as={BsCheck2All} fontSize='lg' color='blue.800' className='mb-0.5' /> 
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@ export default function(){
                                         <Text color='grey' fontSize='small'>12:40</Text>
                                     </div>
                                     <div>
-                                        <Icon as={BsCheck2} fontSize='lg' color='blue.800' className='mb-0.5' /> 
+                                        <Icon as={BsCheck2All} fontSize='lg' color='blue.800' className='mb-0.5' /> 
                                     </div>
                                 </div>
                             </div>

@@ -20,7 +20,7 @@ return (
                 <div className='w-full'>
                     <div className='flex flex-row w-full justify-between'>
                         <Text fontSize='sm' as='b' className='lim-txt lim-txt-110'>Rakhimov Diyor</Text>
-                        <Text fontSize='smaller' color='grey' align='end'>29.12.2020</Text>
+                        <Text fontSize='smaller' color='grey' align='end'>04.08.2023</Text>
                     </div>
 
                     <div className='flex flex-row align-start justify-between items-center'>

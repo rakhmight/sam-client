@@ -19,7 +19,7 @@ export default function(){
 
     return (        
         <>
-        <Tooltip label="Log out" bg='#0b2638' placement='right' closeDelay={50}>                
+        <Tooltip label="Log out" bg='#0b2638' placement='right' closeDelay={50}>
             <IconButton
             isRound={true}
             variant='ghost'
