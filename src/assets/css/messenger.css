@@ -1,11 +1,3 @@
- .messenger{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 40px 250px 670px 280px;
-  position: relative;
-}
-
-
 /* CHATS Component  ===========================*/
 .messenger__chats-window{
     max-height: 567px;

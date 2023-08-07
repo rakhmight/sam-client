@@ -9,21 +9,6 @@
   font-family:'Times New Roman', Times, serif;
 }
 
-.root{
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 30px auto;
-}
-
-.titlebar{
-  width: 100%;
-  background-color: #0b2638;
-  user-select: none;
-  position: relative;
-  z-index: 9999;
-}
-
 ::-webkit-scrollbar {
   width: 5px; /* ширина для вертикального скролла */
   background-color: #b9b9b9;

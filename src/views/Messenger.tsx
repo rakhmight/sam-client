@@ -1,17 +1,19 @@
-import Navigation from "../components/Messenger/Navigation";
-import Info from "../components/Messenger/Info";
-import Chats from "../components/Messenger/Chats";
-import Chat from "../components/Messenger/Chat";
+import MessengerLayout from "@/components/layouts/messenger/MessengerLayout";
+import Navigation from "../components/structures/messenger/navigation/Navigation";
+import Info from "../components/structures/messenger/Info";
+import Chats from "../components/structures/messenger/chats/Chats";
+import Chat from "../components/structures/messenger/Chat";
 import '../assets/css/messenger.css'
 
 export default function(){
     return (
-        <div className="messenger">
+        <MessengerLayout>
             <div></div>
+            
             <Navigation/>
             <Chats/>
             <Chat/>
             <Info/>
-        </div>
+        </MessengerLayout>
     )
 }
