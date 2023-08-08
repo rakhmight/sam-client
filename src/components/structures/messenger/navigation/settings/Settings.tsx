@@ -1,9 +1,10 @@
+import { FC } from 'react'
 import NavBtn from "@/components/ui/buttons/nav-btn/NavBtn";
 import SettingsModal from "./settings-modal/SettingsModal";
 import { useDisclosure } from "@chakra-ui/react";
 import { TbSettings } from "react-icons/tb";
 
-function Settings () {
+const Settings : FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (

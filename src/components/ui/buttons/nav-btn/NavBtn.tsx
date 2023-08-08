@@ -1,7 +1,8 @@
-import { Tooltip, IconButton, Icon } from "@chakra-ui/react"
 import { NavBtnProps } from "./NavBtn.types"
+import { FC } from "react"
+import { Tooltip, IconButton, Icon } from "@chakra-ui/react"
 
-function NavBtn({ tLabel, aLabel, fs, icon, callback, iColor } : NavBtnProps){
+const NavBtn : FC<NavBtnProps> = ({ tLabel, aLabel, fs, icon, callback, iColor }) => {
     return (        
         <Tooltip label={tLabel} bg='#0b2638' placement='right' closeDelay={50}>
             <IconButton

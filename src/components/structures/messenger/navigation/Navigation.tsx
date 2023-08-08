@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, FC } from "react";
 import NavBtn from "@/components/ui/buttons/nav-btn/NavBtn";
 import LogoutBtn from "./logout-btn/LogoutBtn";
 import Settings from "./settings/Settings";
@@ -8,7 +8,7 @@ import { Text } from "@chakra-ui/react";
 import { SlMenu } from "react-icons/sl";
 import { MdClose } from "react-icons/md";
 
-function Navigation() {
+const Navigation : FC = () => {
   const [navMode, expendNav] = useState(false);
   const [showMenu, changeMenuVisible] = useState(false);
 

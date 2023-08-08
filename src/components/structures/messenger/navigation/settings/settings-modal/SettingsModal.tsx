@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import {
     IconButton,
     Icon,
@@ -11,7 +12,7 @@ import { NavigationModalProps } from "../../@types";
 import { TbSettings } from "react-icons/tb";
 import { MdClose } from "react-icons/md";
 
-function SettingsModal({state, handler} : NavigationModalProps) {
+const SettingsModal : FC<NavigationModalProps> = ({state, handler}) => {
   return (
     <Modal isOpen={state} onClose={handler} size="lg" isCentered>
       <ModalOverlay />

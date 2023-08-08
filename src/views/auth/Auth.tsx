@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import '../assets/css/auth.css'
+import { useState, FC } from 'react'
+import styles from './Auth.module.css'
 import {
     Input,
     InputGroup,
@@ -12,14 +12,14 @@ import {
 } from '@chakra-ui/react'
 import { BsEyeFill, BsEyeSlashFill } from 'react-icons/bs'
 
-export default function(){
+const Auth : FC = () => {
     const [show, setShow] = useState(false)
     const handleClick = () => setShow(!show)
 
     return (
-        <div className='auth h-full bg-slate-300'>
+        <div className={`${styles.auth} h-full bg-slate-300`}>
 
-            <div className='auth__form px-6 py-5 bg-slate-100 flex flex-col items-center gap-5'>
+            <div className={`${styles.auth__form} px-6 py-5 bg-slate-100 flex flex-col items-center gap-5`}>
                 <div className='flex items-center gap-2.5'>
                     <Img src='./media/logo-256.png' boxSize='60px'></Img>
                     <div>
@@ -82,3 +82,5 @@ export default function(){
         </div>
     )
 }
+
+export default Auth

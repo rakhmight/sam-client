@@ -2,12 +2,19 @@ import { create } from 'zustand'
 
 export interface InfoPanelValue {
     mode: string,
-    des: string
+    des: string | null
 }
 
-const useStore = create((set) => ({
+export interface MessengerState{
+    showEmoji: boolean,
+    setShowEmoji: (a:boolean) => void,
+    infoPanel: InfoPanelValue,
+    changeInfoPanel: (a: InfoPanelValue) => void
+}
+
+const useStore= create<MessengerState>((set) => ({
     showEmoji: false,
-    setShowEmoji: (showEmoji:Boolean) => set({ showEmoji }),
+    setShowEmoji: (showEmoji:boolean) => set({ showEmoji }),
 
     infoPanel: { mode: 'user-info', des: null },
     changeInfoPanel: (infoPanel:InfoPanelValue) => set({ infoPanel })

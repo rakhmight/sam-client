@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import {
     IconButton,
     Tooltip,
@@ -14,7 +15,7 @@ import {
 } from '@chakra-ui/react'
 import { HiOutlinePencilSquare } from 'react-icons/hi2'
 
-export default function(){
+const Contact :FC = () => {
     return (
         <div className='py-2 px-4 flex justify-between gap-2.5 items-center hover:bg-slate-50 hover:cursor-pointer contact'>
             <div className='flex gap-2 items-center'> 
@@ -73,3 +74,5 @@ export default function(){
         </div>
     )
 }
+
+export default Contact

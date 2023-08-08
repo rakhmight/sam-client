@@ -1,16 +1,17 @@
+import { FC } from 'react'
 import {
     Text,
     Button,
     Input,
     Img
 } from "@chakra-ui/react"
-import '../assets/css/block.css'
+import styles from './Block.module.css'
 
-export default function(){
+const Block : FC = () => {
     return (
-        <div className="block w-full h-full bg-slate-300">
+        <div className={`${styles.block} bg-slate-300`}>
 
-            <div className="block__form flex flex-col items-center gap-7">
+            <div className={`${styles.block__form} flex flex-col items-center gap-7`}>
                 <div className='flex items-center gap-2.5'>
                     <Img src='./media/logo-256.png' boxSize='54px'></Img>
                     <div>
@@ -48,3 +49,5 @@ export default function(){
         </div>
     )
 }
+
+export default Block

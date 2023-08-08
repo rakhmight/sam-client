@@ -1,9 +1,10 @@
+import { FC } from 'react'
 import NavBtn from "@/components/ui/buttons/nav-btn/NavBtn";
 import GuideModal from "./guide-modal/GuideModal";
 import { useDisclosure } from "@chakra-ui/react";
 import { BsFillJournalBookmarkFill } from "react-icons/bs";
 
-function Guide() {
+const Guide : FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (

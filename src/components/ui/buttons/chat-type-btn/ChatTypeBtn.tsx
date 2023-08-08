@@ -1,8 +1,9 @@
-import { Icon, useToast, IconButton } from '@chakra-ui/react'
 import { ChatTypeBtnProps } from './ChatTypeBtn.types'
+import { FC } from 'react'
+import { Icon, useToast, IconButton } from '@chakra-ui/react'
 
 
-function ChatTypeBtn({ icon, aLabel, fs, avaible } : ChatTypeBtnProps){
+const ChatTypeBtn : FC<ChatTypeBtnProps> = ({ icon, aLabel, fs, available }) => {
     const toast = useToast()
     const id ='will-come'
 
@@ -16,7 +17,7 @@ function ChatTypeBtn({ icon, aLabel, fs, avaible } : ChatTypeBtnProps){
         fontSize={fs}
         icon={<Icon as={icon} />}
         onClick={() =>{
-           if (!toast.isActive(id) && avaible){
+           if (!toast.isActive(id) && available){
               toast({
               description: `Will come in the next update`,
               status: 'info',

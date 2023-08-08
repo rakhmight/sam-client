@@ -1,7 +1,8 @@
+import { FC } from 'react'
 import { Icon, IconButton } from "@chakra-ui/react";
 import { BiSolidLockOpenAlt } from "react-icons/bi";
 
-function BlockBtn() {
+const BlockBtn : FC = () => {
   return (
     <IconButton
       isRound={true}

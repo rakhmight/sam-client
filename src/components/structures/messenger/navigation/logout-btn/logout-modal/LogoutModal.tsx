@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import {
     IconButton,
     Icon,
@@ -13,7 +14,7 @@ import { IoWarningOutline } from 'react-icons/io5'
 import { ImExit } from 'react-icons/im'
 import { NavigationModalProps } from '../../@types'
 
-function LogoutModal({state, handler} : NavigationModalProps){
+const LogoutModal : FC<NavigationModalProps> = ({state, handler}) => {
     return (
         <Modal isOpen={state} onClose={handler} size='md' isCentered>
             <ModalOverlay />

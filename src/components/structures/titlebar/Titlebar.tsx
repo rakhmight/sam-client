@@ -1,8 +1,9 @@
+import { FC } from 'react'
 import AppInfo from './app-info/AppInfo'
 import ActionsBtn from './action-btn/ActionsBtn'
 import styles from './Titlebar.module.css'
 
-function Titlebar(){
+const Titlebar : FC = () => {
 
     const actions = ['min','close']
 

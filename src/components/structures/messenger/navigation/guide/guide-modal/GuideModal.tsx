@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import {
     IconButton,
     Icon,
@@ -11,7 +12,7 @@ import { MdClose } from 'react-icons/md'
 import { BsBookHalf } from 'react-icons/bs'
 import { NavigationModalProps } from '../../@types'
 
-function GuideModal({ state, handler } : NavigationModalProps){
+const GuideModal : FC<NavigationModalProps> = ({ state, handler }) => {
     return (
         <Modal isOpen={state} onClose={handler} size='lg' isCentered>
             <ModalOverlay />

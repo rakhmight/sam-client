@@ -4,5 +4,5 @@ export interface ChatTypeBtnProps {
     icon: As,
     aLabel: string,
     fs: string,
-    avaible: boolean
+    available: boolean
 }

@@ -1,13 +1,11 @@
+import { FC } from 'react'
+import { ActProps } from './ActionsBtn.types'
 import { appWindow } from '@tauri-apps/api/window'
 import { IconButton, Icon } from '@chakra-ui/react'
 import { VscChromeMinimize } from 'react-icons/vsc'
 import { TfiClose } from 'react-icons/tfi'
 
-interface Act {
-    act: string
-}
-
-function ActionBtn({ act } : Act){
+const ActionBtn : FC<ActProps> = ({ act }) => {
     
     function minimizeWindow():any{
         appWindow.minimize()

@@ -1,6 +1,7 @@
+import { FC } from 'react'
 import { Text, Image } from '@chakra-ui/react'
 
-function AppInfo(){
+const AppInfo : FC = () => {
     return (
         <div className='px-1.5 flex flex-row gap-1'>
             <div className='flex items-center'>

@@ -1,9 +1,10 @@
+import { FC } from 'react'
 import { useDisclosure } from '@chakra-ui/react'
 import { ImExit } from 'react-icons/im'
 import NavBtn from '@/components/ui/buttons/nav-btn/NavBtn'
 import LogoutModal from './logout-modal/LogoutModal'
 
-function LogoutBtn(){
+const LogoutBtn : FC = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (        

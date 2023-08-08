@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import ContactSearchInput from "./contact-search-input/ContactSearchInput";
 import Contact from "./contact/Contact";
 import {
@@ -12,7 +13,7 @@ import {
 import { NavigationModalProps } from "../../@types";
 import { MdClose, MdPersonSearch } from "react-icons/md";
 
-function ContactListModal({ state, handler }: NavigationModalProps) {
+const ContactListModal :FC<NavigationModalProps> = ({ state, handler }) => {
   return (
     <Modal isOpen={state} onClose={handler} size="md" isCentered>
       <ModalOverlay />

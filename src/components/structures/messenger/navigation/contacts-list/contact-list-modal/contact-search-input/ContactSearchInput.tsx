@@ -1,7 +1,8 @@
+import { FC } from 'react'
 import { Input, InputGroup, InputLeftElement, Icon } from "@chakra-ui/react";
 import { BsSearch } from "react-icons/bs";
 
-function ContactSearchInput() {
+const ContactSearchInput : FC = () => {
   return (
     <div className="px-4">
       <InputGroup size="sm">
