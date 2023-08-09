@@ -1,5 +1,7 @@
+import { RefObject } from "react"
+
 export interface MsgTextareaProps {
     msgCtx: string,
-    textareaRef: React.RefObject<HTMLTextAreaElement>
+    textareaRef: RefObject<HTMLTextAreaElement>
     setMsg: (a : string) => void
 }

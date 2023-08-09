@@ -7,7 +7,7 @@ import EmojiPicker from './emoji-picker/EmojiPicker';
 const ChatTools : FC = () => {
     const [ msgCtx, setMsg ] = useState('')
 
-    const textareaRef: React.MutableRefObject<HTMLTextAreaElement> | any = useRef()
+    const textareaRef = useRef<HTMLTextAreaElement>(null)
 
     return (
         <div className="chat__tools bg-slate-100 px-1.5 flex flex-row gap-1.5">
