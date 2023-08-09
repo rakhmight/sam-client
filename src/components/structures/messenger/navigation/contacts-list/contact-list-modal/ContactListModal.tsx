@@ -10,7 +10,7 @@ import {
   ModalOverlay,
   ModalContent,
 } from "@chakra-ui/react";
-import { NavigationModalProps } from "../../@types";
+import { NavigationModalProps } from "../../types";
 import { MdClose, MdPersonSearch } from "react-icons/md";
 
 const ContactListModal :FC<NavigationModalProps> = ({ state, handler }) => {
@@ -56,7 +56,7 @@ const ContactListModal :FC<NavigationModalProps> = ({ state, handler }) => {
 
           <Divider className="mt-2.5" />
 
-          <div className="contacts__list">
+          <div className="max-h-[500px] overflow-y-auto">
             <Contact />
           </div>
 

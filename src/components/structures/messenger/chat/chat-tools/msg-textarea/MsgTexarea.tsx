@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Textarea } from '@chakra-ui/react'
 import ResizeTextarea from "react-textarea-autosize"
-import { MsgTextareaProps } from './MsgTextarea.types'
+import { MsgTextareaProps } from './types'
 
 const MsgTextarea : FC<MsgTextareaProps> = ({msgCtx, textareaRef, setMsg}) => {
     return(

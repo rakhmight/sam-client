@@ -1,0 +1,21 @@
+.chat-tools{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    overflow: hidden;
+    align-items: end;
+}
+
+.chat-textarea>::-webkit-scrollbar{
+    width: 4px;
+}
+.chat-textarea{
+    flex: 1 1 auto;
+    margin: 5px 0;
+}
+
+.emoji{
+    position: relative;
+}

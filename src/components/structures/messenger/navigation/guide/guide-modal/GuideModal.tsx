@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { MdClose } from 'react-icons/md'
 import { BsBookHalf } from 'react-icons/bs'
-import { NavigationModalProps } from '../../@types'
+import { NavigationModalProps } from '../../types'
 
 const GuideModal : FC<NavigationModalProps> = ({ state, handler }) => {
     return (

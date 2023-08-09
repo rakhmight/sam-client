@@ -1,7 +1,6 @@
-import { ChatTypeBtnProps } from './ChatTypeBtn.types'
+import { ChatTypeBtnProps } from './types'
 import { FC } from 'react'
 import { Icon, useToast, IconButton } from '@chakra-ui/react'
-
 
 const ChatTypeBtn : FC<ChatTypeBtnProps> = ({ icon, aLabel, fs, available }) => {
     const toast = useToast()

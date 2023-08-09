@@ -1,0 +1,18 @@
+.msg-out, .msg-inc{
+    padding: 8px 10px;
+    max-width: 80%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.msg-out {
+    background-color: aliceblue;
+    border-radius: 10px 10px 0 10px;
+}
+.msg-inc {
+    background-color: rgb(227, 235, 241);
+    border-radius: 10px 10px 10px 0;
+}

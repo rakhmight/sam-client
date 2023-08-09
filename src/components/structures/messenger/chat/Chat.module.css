@@ -1,0 +1,5 @@
+.chat{
+    display: grid;
+    grid-template-rows: 48px auto minmax(44px, min-content);
+    max-height: 670px;
+}

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { MenuItem, Text, useToast } from '@chakra-ui/react'
-import { ContactMenuBtnProps } from './ContactMenuBtn.types'
+import { ContactMenuBtnProps } from './types'
 
 const ContactMenuBtn : FC<ContactMenuBtnProps> = ({ icon, txt }) => {
     const toast = useToast()

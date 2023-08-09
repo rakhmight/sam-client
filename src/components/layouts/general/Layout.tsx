@@ -1,7 +1,8 @@
-import { LayoutProps } from '../@types'
+import { FC } from 'react'
+import { LayoutProps } from '../types'
 import styles from './Layout.module.css'
 
-function Layout({ children } : LayoutProps): JSX.Element{
+const Layout : FC<LayoutProps> = ({ children }) => {
     return (
         <div className={styles.layout}>
             { children }

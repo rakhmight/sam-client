@@ -1,0 +1,7 @@
+.contact:hover .contact-action{
+    opacity: 1;
+}
+
+.contact-action{
+    opacity: 0
+}

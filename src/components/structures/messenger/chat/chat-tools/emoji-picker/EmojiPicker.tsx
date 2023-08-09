@@ -4,21 +4,22 @@ import { IconButton, Icon } from '@chakra-ui/react'
 import data from '@emoji-mart/data'
 import { RiEmojiStickerLine } from 'react-icons/ri'
 import useStore, { MessengerState } from '@/hooks/useStore'
-import { EmojiPickerProps } from './EmojiPicker.types'
+import { EmojiPickerProps, EmojiProps } from './types'
+import styles from './EmojiPicker.module.css'
 
-const EmojiPicker : FC<EmojiPickerProps> = ({ setMsg, textareaRef }) => {
+const EmojiPicker : FC<EmojiPickerProps> = ({ setMsg, textareaRef, msgCtx }) => {
     const showEmoji = useStore((state:MessengerState)=>state.showEmoji)
     const setShowEmoji = useStore((state:MessengerState)=>state.setShowEmoji)
     
-    function onEmojiSelect( emoji:{ native:string } ) {        
-        setMsg((msgCtx: string) => msgCtx + emoji.native)
-        textareaRef.current.focus()
+    function onEmojiSelect(emoji:EmojiProps) {        
+        setMsg(msgCtx + emoji.native)
+        textareaRef.current?.focus()
     }
 
     return(
         <>
             {showEmoji && (
-                <div id='emojiPicker' className='emoji__picker' onMouseOut={() => setShowEmoji(false)}>
+                <div id='emojiPicker' className={styles["emoji-picker"]} onMouseOut={() => setShowEmoji(false)}>
                     <Picker
                     onEmojiSelect={onEmojiSelect}
                     data={data}

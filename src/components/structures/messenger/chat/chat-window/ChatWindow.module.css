@@ -1,0 +1,12 @@
+.chat-window{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.messages-window{
+    max-height: 567px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

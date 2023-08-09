@@ -14,10 +14,11 @@ import {
     PopoverCloseButton
 } from '@chakra-ui/react'
 import { HiOutlinePencilSquare } from 'react-icons/hi2'
+import styles from './Contact.module.css'
 
 const Contact :FC = () => {
     return (
-        <div className='py-2 px-4 flex justify-between gap-2.5 items-center hover:bg-slate-50 hover:cursor-pointer contact'>
+        <div className={ `py-2 px-4 flex justify-between gap-2.5 items-center hover:bg-slate-50 hover:cursor-pointer ${styles.contact}`}>
             <div className='flex gap-2 items-center'> 
                 <div>
                     <Popover placement='left'>
@@ -66,7 +67,7 @@ const Contact :FC = () => {
                     size="sm"
                     fontSize='18px'
                     icon={<Icon as={HiOutlinePencilSquare} />}
-                    className='contact__action'
+                    className={styles["contact-action"]}
                     onFocus={e => e.preventDefault()}
                     />
                 </Tooltip>

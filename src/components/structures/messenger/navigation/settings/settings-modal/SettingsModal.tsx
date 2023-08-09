@@ -8,7 +8,7 @@ import {
     ModalOverlay,
     ModalContent,
   } from "@chakra-ui/react";
-import { NavigationModalProps } from "../../@types";
+import { NavigationModalProps } from "../../types";
 import { TbSettings } from "react-icons/tb";
 import { MdClose } from "react-icons/md";
 

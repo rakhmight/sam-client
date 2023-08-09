@@ -1,0 +1,11 @@
+.navigation{
+    position: absolute;
+    z-index: 2;
+    transition: width 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: var(--main-color);
+    border-top: 1px solid rgba(196, 196, 196, 0.199);
+}

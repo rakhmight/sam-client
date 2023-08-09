@@ -7,7 +7,7 @@ import { Avatar, AvatarBadge, Text, Badge } from '@chakra-ui/react'
 const Correspondence : FC = () => {
     return (
         <div className='w-full hover:bg-slate-200'>
-            <div className='messenger__correspondence-box flex flex-row w-full justify-between py-1.5 px-2.5'>
+            <div className="flex flex-row w-full justify-between py-1.5 px-2.5 cursor-pointer">
 
                 <div className='flex w-full flex-row gap-1.5 items-center'>
                     <div>
@@ -18,16 +18,16 @@ const Correspondence : FC = () => {
 
                     <div className='w-full'>
                         <div className='flex flex-row w-full justify-between'>
-                            <Text fontSize='sm' as='b' className='lim-txt lim-txt-110'>Rakhimov Diyor</Text>
+                            <Text fontSize='sm' as='b' className='lim-txt w-[110px]'>Rakhimov Diyor</Text>
                             <Text fontSize='smaller' color='grey' align='end'>04.08.2023</Text>
                         </div>
 
                         <div className='flex flex-row align-start justify-between items-center'>
                             <div>
-                                {/* <Text fontSize='sm' color='grey' className='lim-txt lim-txt-150'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Text> */}
+                                {/* <Text fontSize='sm' color='grey' className='lim-txt w-[150px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Text> */}
                                 <div className='flex gap-1'>
                                     <Badge colorScheme='facebook'>jpeg</Badge>
-                                    <Text fontSize='sm' color='grey' className='lim-txt lim-txt-120' as='i'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo error expedita placeat, soluta adipisci aut repellendus dignissimos odit? Blanditiis eaque debitis aperiam tempore ab inventore quae qui asperiores maiores doloremque.</Text>
+                                    <Text fontSize='sm' color='grey' className='lim-txt w-[120px]' as='i'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo error expedita placeat, soluta adipisci aut repellendus dignissimos odit? Blanditiis eaque debitis aperiam tempore ab inventore quae qui asperiores maiores doloremque.</Text>
                                 </div>
                             </div>
                             <div>

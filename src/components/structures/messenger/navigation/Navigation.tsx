@@ -7,6 +7,7 @@ import Guide from "./guide/Guide";
 import { Text } from "@chakra-ui/react";
 import { SlMenu } from "react-icons/sl";
 import { MdClose } from "react-icons/md";
+import styles from './Navigation.module.css'
 
 const Navigation : FC = () => {
   const [navMode, expendNav] = useState(false);
@@ -28,8 +29,8 @@ const Navigation : FC = () => {
     <div
       className={
         !navMode
-          ? "nav-min navigation h-full py-2.5"
-          : "nav-full navigation h-full py-2.5"
+          ? `w-[40px] ${styles.navigation} h-full py-2.5`
+          : `w-[200px] ${styles.navigation} h-full py-2.5`
       }
     >
       <div className="h-full w-full px-1">

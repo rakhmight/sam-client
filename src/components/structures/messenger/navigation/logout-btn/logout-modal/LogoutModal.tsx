@@ -12,7 +12,7 @@ import {
 import { MdClose } from 'react-icons/md'
 import { IoWarningOutline } from 'react-icons/io5'
 import { ImExit } from 'react-icons/im'
-import { NavigationModalProps } from '../../@types'
+import { NavigationModalProps } from '../../types'
 
 const LogoutModal : FC<NavigationModalProps> = ({state, handler}) => {
     return (

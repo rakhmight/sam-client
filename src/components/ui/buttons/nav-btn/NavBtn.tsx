@@ -1,4 +1,4 @@
-import { NavBtnProps } from "./NavBtn.types"
+import { NavBtnProps } from "./types"
 import { FC } from "react"
 import { Tooltip, IconButton, Icon } from "@chakra-ui/react"
 

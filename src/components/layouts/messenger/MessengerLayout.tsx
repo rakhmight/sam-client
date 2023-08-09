@@ -1,7 +1,8 @@
-import { LayoutProps } from '../@types'
+import { FC } from 'react'
+import { LayoutProps } from '../types'
 import styles from './Messenger.module.css'
 
-function MessengerLayout({ children } : LayoutProps): JSX.Element{
+const MessengerLayout : FC<LayoutProps> = ({ children }) => {
     return (
         <div className={styles.messenger}>
             { children }
