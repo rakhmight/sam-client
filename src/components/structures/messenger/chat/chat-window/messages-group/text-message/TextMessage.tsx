@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { Text, Icon } from '@chakra-ui/react'
-import { BsCheck2, BsCheck2All } from 'react-icons/bs'
+import { BsCheck2All } from 'react-icons/bs'
+// import { BsCheck2, BsCheck2All } from 'react-icons/bs'
 import styles from './TextMessage.module.css'
 
 interface TextMessageProps {

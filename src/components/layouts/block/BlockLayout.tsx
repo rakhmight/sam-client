@@ -1,7 +1,6 @@
-import { FC } from 'react'
-import { LayoutProps } from '../types'
+import { FC, PropsWithChildren } from 'react'
 
-const BlockLayout : FC<LayoutProps> = ({ children }) => {
+const BlockLayout : FC<PropsWithChildren<unknown>> = ({ children }) => {
     return(
         <div className={`w-full h-full flex items-center justify-center bg-slate-300`}>
             { children }

@@ -1,5 +1,5 @@
 [package]
-name = "sa-messanger"
+name = "sa-messenger"
 version = "0.0.0"
 description = "Smart Academy messenger"
 authors = ["you"]

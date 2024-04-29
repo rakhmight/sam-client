@@ -1,8 +1,7 @@
-import { FC } from 'react'
-import { LayoutProps } from '../types'
+import { FC, PropsWithChildren } from 'react'
 import styles from './Layout.module.css'
 
-const Layout : FC<LayoutProps> = ({ children }) => {
+const Layout : FC<PropsWithChildren<unknown>> = ({ children }) => {
     return (
         <div className={styles.layout}>
             { children }

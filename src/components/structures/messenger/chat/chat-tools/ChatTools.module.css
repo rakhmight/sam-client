@@ -5,7 +5,7 @@
     border-left: 1px solid #c4c4c4;
     border-right: 1px solid #c4c4c4;
     overflow: hidden;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .chat-textarea>::-webkit-scrollbar{

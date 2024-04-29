@@ -1,7 +1,10 @@
 import { FC } from 'react'
 import { IconButton, Icon, Text, Badge } from '@chakra-ui/react'
-import { ImFilePlay, ImFileMusic, ImFileEmpty, ImFilePicture } from 'react-icons/im'
-import { BsCheck2, BsCheck2All } from 'react-icons/bs'
+import { ImFilePicture } from 'react-icons/im'
+import { BsCheck2All } from 'react-icons/bs'
+
+// import { BsCheck2, BsCheck2All } from 'react-icons/bs'
+// import { ImFilePlay, ImFileMusic, ImFileEmpty, ImFilePicture } from 'react-icons/im'
 import styles from './FileMessage.module.css'
 
 interface FileMessageProps {

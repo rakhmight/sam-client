@@ -5,9 +5,9 @@ import Block from '../views/block/Block'
 
 const AppRoutes = () => (
   <Routes>
-    <Route path='/messenger' element={<Messenger />} />
+    <Route path='/' element={<Messenger />} />
     <Route path='/auth' element={<Auth />} />
-    <Route path='/' element={<Block />} />
+    <Route path='/block' element={<Block />} />
   </Routes>
 )
 

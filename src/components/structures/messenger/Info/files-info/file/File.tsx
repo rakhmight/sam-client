@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { Text, IconButton, Icon, Badge } from '@chakra-ui/react'
-import { ImFilePlay, ImFileMusic, ImFileEmpty, ImFilePicture } from 'react-icons/im'
+import { ImFileEmpty } from 'react-icons/im'
+// import { ImFilePlay, ImFileMusic, ImFileEmpty, ImFilePicture } from 'react-icons/im'
 
 const File : FC = () => {
     return (
